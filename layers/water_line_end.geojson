@@ -1,0 +1,4 @@
+{
+  "type" : "FeatureCollection",
+  "features" : [{"type":"Feature","id":1,"geometry":{"type":"Point","coordinates":[30.525433080000028,25.433122171000036]},"properties":{"OBJECTID":1,"Name":"نهاية خط مياه","fcode":"64","discription":""}}]
+}

@@ -1,0 +1,4 @@
+{
+  "type" : "FeatureCollection",
+  "features" : [{"type":"Feature","id":1,"geometry":{"type":"Point","coordinates":[30.524232332000054,25.432270498000037]},"properties":{"OBJECTID":1,"Name":"غرفة مربعة","fcode":"55","discription":""}},{"type":"Feature","id":2,"geometry":{"type":"Point","coordinates":[30.524726582000028,25.432283392000045]},"properties":{"OBJECTID":2,"Name":"غرفة مربعة","fcode":"55","discription":""}}]
+}

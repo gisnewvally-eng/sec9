@@ -1,0 +1,4 @@
+{
+  "type" : "FeatureCollection",
+  "features" : [{"type":"Feature","id":1,"geometry":{"type":"Point","coordinates":[30.525574363000032,25.433227751000061]},"properties":{"OBJECTID":1,"Name":"منظم غاز","fcode":"703","discription":"ضغط عالي - رقم reg-9-1 "}}]
+}
