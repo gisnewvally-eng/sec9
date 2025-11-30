@@ -589,7 +589,7 @@ for(const [name, info] of Object.entries(layersInfo)){
   }).then(data=>{
     const layer = L.geoJSON(data, {
       style: feat=>{
-        return {color: info.color || "#3388ff", weight:2, fillOpacity:0.7};
+        return {color: info.color || "#3388ff", weight:4, fillOpacity:0.7};
       },
       pointToLayer: (feat, latlng) => {
         if(info.icon) return L.marker(latlng, {icon: info.icon});
@@ -764,6 +764,7 @@ northArrow.addEventListener("click", () => {
 </script>
 </body>
 </html>
+
 
 
 
