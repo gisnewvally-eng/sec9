@@ -480,7 +480,8 @@ const icons = {
   sewer_station: L.icon({ iconUrl: "images/Sewer_station.png", iconSize: [18, 18] }),
   gas_icon: L.icon({ iconUrl: "images/gas_valve.png", iconSize: [18, 18] }),
   gas_end_icon: L.icon({ iconUrl: "images/gas_end_icon.png", iconSize: [18, 18] }),
-  gas_regulator_icon: L.icon({ iconUrl: "images/gas_regulator.png", iconSize: [18, 18] })
+  gas_regulator_icon: L.icon({ iconUrl: "images/gas_regulator.png", iconSize: [18, 18] }),
+  gas_reducer_icon: L.icon({ iconUrl: "images/gas_reducer.png", iconSize: [18, 18] })
 };
 
 
@@ -507,7 +508,7 @@ const layersInfo = {
   
 
   "خطوط الغاز ♨": { file: "layers/gas_lines.geojson", color: "#FF8C00" },
-  "محابس الغاز ♨": { file: "layers/gas_valve.geojson", icon: icons.gas_icon },
+  "مخفض الغاز ♨": { file: "layers/gas_reducer.geojson", icon: icons.gas_reducer_icon },
   "منظم الغاز ♨": { file: "layers/gas_regulator.geojson", icon: icons.gas_regulator_icon },
   "النهايات المغلقة للغاز ♨": { file: "layers/gas_endcap.geojson", icon: icons.gas_end_icon }
 
@@ -543,7 +544,7 @@ const groups = {
 
   "الغاز ♨": [
     "خطوط الغاز ♨",
-    "محابس الغاز ♨",
+    "مخفض الغاز ♨",
     "منظم الغاز ♨",
     "النهايات المغلقة للغاز ♨"
   ],
@@ -764,6 +765,7 @@ northArrow.addEventListener("click", () => {
 </script>
 </body>
 </html>
+
 
 
 
