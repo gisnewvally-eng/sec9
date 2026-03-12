@@ -325,13 +325,12 @@ footer .line2 {
   transition: transform 0.5s ease;
 }
 
-#map #northArrow::after {
-  content: "";
-  display: block;
+#map #northArrow img {
   width: 40px;
   height: 40px;
-  background: url('north.png') no-repeat center/contain;
+  display: block;
 }
+
 
 /* في الوضع الليلي */
 body.dark-mode #map #northArrow {
@@ -409,7 +408,7 @@ body.dark-mode #map #northArrow {
   <!-- Map -->
   <div id="map" role="application" aria-label="خريطة المرافق">
   <!-- سهم الشمال داخل الخريطة لتكون طبقاته مرتبة -->
-  <div id="northArrow" title="اتجاه الشمال"></div>
+   <div id="northArrow" title="اتجاه الشمال"><img src="north.png" alt="سهم الشمال"></div>
   </div>
 
   <!-- Footer -->
@@ -423,13 +422,14 @@ body.dark-mode #map #northArrow {
    ----------------------- */
 const baseMaps = {
   osm: L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19, attribution:'© OpenStreetMap contributors'}),
-  satellite: L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{maxZoom:19}),
+    satellite: L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{maxZoom:22, maxNativeZoom:19}),
   dark: L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",{maxZoom:19})
 };
 
 const map = L.map('map', {
   center:[25.687,30.841],
   zoom:16,
+  maxZoom:22,
   layers:[baseMaps.osm],
   zoomControl:true
 });
@@ -765,6 +765,7 @@ northArrow.addEventListener("click", () => {
 </script>
 </body>
 </html>
+
 
 
 
